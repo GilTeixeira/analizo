@@ -34,6 +34,8 @@ setup_debian() {
   packages=$(locate_package $(dzil listdeps))
   sudo apt-get -q -y -f install $packages
   dzil listdeps --missing | cpanm --notest
+
+  npm install --prefix ./parser/
 }
 
 locate_package() {

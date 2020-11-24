@@ -6,10 +6,21 @@ sub new {
 
 sub value {
   my ($self, $module) = @_;
-  if (!defined $self->{cache}->{$module}) {
-    $self->{cache}->{$module} = $self->calculate($module);
-  }
+
+  my $start_time = Time::HiRes::gettimeofday();
+  $self->{cache}->{$module} = $self->calculate($module);
+  my $stop_time = Time::HiRes::gettimeofday();
+  my $diff = ($stop_time - $start_time)*1000*1000;
+  
   my $value = $self->{cache}->{$module};
+  my $metric = $self->description();
+
+
+  #print("Class: $module\n");
+  #print("Metric: $value\n");
+  #print("Time: $diff\n");
+  print("$module;$metric;$value;$diff\n");
+   
   return $value;
 }
 

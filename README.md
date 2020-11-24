@@ -7,6 +7,23 @@ Analizo is a suite of source code analysis tools, aimed at being
 language-independent and extensible. The project home page is
 http://analizo.org
 
+## Installing Dependencies
+
+Run this command:
+
+```console
+./development-setup.sh
+```
+
+## Measure Times
+
+Run this command:
+
+```console
+sh run.sh <PROEJECT_PATH>
+```
+
+
 # Installation
 
 See [INSTALL.md](INSTALL.md).
