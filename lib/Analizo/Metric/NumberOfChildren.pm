@@ -42,6 +42,10 @@ sub description {
   return "Number of Children";
 }
 
+sub id {
+  return "CK-NOC";
+}
+
 sub calculate {
   my ($self, $module) = @_;
 

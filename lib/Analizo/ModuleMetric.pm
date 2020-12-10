@@ -13,13 +13,14 @@ sub value {
   my $diff = ($stop_time - $start_time)*1000*1000;
   
   my $value = $self->{cache}->{$module};
-  my $metric = $self->description();
+  my $metric = $self->id();
 
 
   #print("Class: $module\n");
   #print("Metric: $value\n");
   #print("Time: $diff\n");
-  print("$module;$metric;$value;$diff\n");
+  my $cl = $module =~ s/::/./rg;
+  print("$cl;$metric;$value;$diff\n");
    
   return $value;
 }

@@ -45,6 +45,10 @@ sub description {
   return 'Afferent Connections per Class (used to calculate COF - Coupling Factor)';
 }
 
+sub id {
+  return 'Afferent Connections per Class (used to calculate COF - Coupling Factor)';
+}
+
 sub calculate {
   my ($self, $module) = @_;
   $self->analized_module($module);

@@ -37,6 +37,10 @@ sub description {
   return "Number of Attributes";
 }
 
+sub id {
+  return "Number of Attributes";
+}
+
 sub calculate {
   my ($self, $module) = @_;
   my @variables = $self->model->variables($module);

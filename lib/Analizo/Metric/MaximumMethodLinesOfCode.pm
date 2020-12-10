@@ -17,6 +17,10 @@ sub description {
   return "Max Method LOC";
 }
 
+sub id {
+  return "Max Method LOC";
+}
+
 sub calculate {
   my ($self, $module) = @_;
 

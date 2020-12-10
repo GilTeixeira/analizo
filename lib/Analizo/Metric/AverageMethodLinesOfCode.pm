@@ -37,6 +37,10 @@ sub description {
   return "Average Method Lines of Code";
 }
 
+sub id {
+  return "Average Method Lines of Code";
+}
+
 sub calculate {
   my ($self, $module) = @_;
 

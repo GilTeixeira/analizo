@@ -39,6 +39,10 @@ sub description {
   return "Lines of Code";
 }
 
+sub id {
+  return "OO-LOC";
+}
+
 sub calculate {
   my ($self, $module) = @_;
 

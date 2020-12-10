@@ -39,6 +39,10 @@ sub description {
   return "Number of Methods";
 }
 
+sub id {
+  return "LH-NOM";
+}
+
 sub calculate {
   my ($self, $module) = @_;
   my @functions = $self->model->functions($module);

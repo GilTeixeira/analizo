@@ -45,6 +45,10 @@ sub description {
   return 'Average Cyclomatic Complexity per Method';
 }
 
+sub id {
+  return "OO-CyC";
+}
+
 sub calculate {
   my ($self, $module) = @_;
 

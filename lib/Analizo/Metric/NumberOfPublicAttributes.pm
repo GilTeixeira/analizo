@@ -39,6 +39,10 @@ sub description {
   return "Number of Public Attributes";
 }
 
+sub id {
+  return "Number of Public Attributes";
+}
+
 sub calculate {
   my ($self, $module) = @_;
 

@@ -38,6 +38,10 @@ sub description {
   return "Average Number of Parameters per Method";
 }
 
+sub id {
+  return "Average Number of Parameters per Method";
+}
+
 sub calculate {
   my ($self, $module) = @_;
 

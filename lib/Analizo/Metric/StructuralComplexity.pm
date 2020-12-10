@@ -44,6 +44,10 @@ sub description {
   return "Structural Complexity";
 }
 
+sub id {
+  return "Structural Complexity";
+}
+
 sub calculate {
   my ($self, $module) = @_;
 

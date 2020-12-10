@@ -40,6 +40,10 @@ sub description {
   return "Response for a Class";
 }
 
+sub id {
+  return "CK-RFC";
+}
+
 sub calculate {
   my ($self, $module) = @_;
 

@@ -58,6 +58,10 @@ sub description {
   return "Lack of Cohesion of Methods";
 }
 
+sub id {
+  return "CK-LCOM";
+}
+
 sub calculate {
   my ($self, $module) = @_;
   my $graph = Graph->new;

@@ -40,6 +40,10 @@ sub description {
   return "Depth of Inheritance Tree";
 }
 
+sub id {
+  return "CK-DIT";
+}
+
 sub calculate {
   my ($self, $module) = @_;
 

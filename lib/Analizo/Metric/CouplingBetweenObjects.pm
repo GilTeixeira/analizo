@@ -41,6 +41,10 @@ sub description {
   return "Coupling Between Objects";
 }
 
+sub id {
+  return "CK-CBO";
+}
+
 sub calculate {
   my ($self, $module) = @_;
   $self->analized_module($module);
