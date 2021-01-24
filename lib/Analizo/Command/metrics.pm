@@ -54,7 +54,7 @@ sub validate {
 
 sub execute {
   my ($self, $opt, $args) = @_;
-  print("class;metric;result;time\n");
+  print("id;metric;value;time\n");
   if($opt->list){
     my $metrics_handler = Analizo::Metrics->new(model => Analizo::Model->new);
     my %metrics = $metrics_handler->list_of_metrics();
